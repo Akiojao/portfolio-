@@ -170,8 +170,8 @@ header ul li a:hover {
 
 .product img {
   width: 80%;
-  -webkit-box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.4);
-          box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.4);
+/*   -webkit-box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.4);
+          box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.4); */
   -webkit-box-shadow: 0 0 12px rgba(0, 0, 0, 0.4);
           box-shadow: 0 0 12px rgba(0, 0, 0, 0.4);
 }
