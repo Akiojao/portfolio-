@@ -1,0 +1,302 @@
+* {
+  margin: 0;
+  padding: 0;
+  letter-spacing: 1px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.wrap {
+  overflow: hidden;
+}
+
+header ul {
+  position: fixed;
+  background: rgba(255, 255, 255, 0.6);
+  z-index: 2;
+  top: 60px;
+  left: 30px;
+  width: 70%;
+  display: none;
+}
+
+header ul li {
+  list-style: none;
+  padding: 4px;
+}
+
+header ul li a {
+  text-decoration: none;
+  color: #333;
+  display: block;
+}
+
+header ul li a:hover {
+  -webkit-text-decoration: underline #628162;
+          text-decoration: underline #628162;
+  color: #628162;
+}
+
+.fa-bars {
+  font-size: 30px;
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 3;
+  cursor: pointer;
+}
+
+.top {
+  width: 100%;
+  height: 600px;
+  letter-spacing: 3px;
+  text-align: center;
+  background: silver;
+}
+
+.top-text {
+  position: relative;
+  top: 50%;
+}
+
+.introduction {
+  text-align: center;
+  padding: 50px 0;
+  letter-spacing: 1px;
+  background: #efefef;
+}
+
+.introduction h3 {
+  font-size: 2rem;
+  margin-bottom: 50px;
+}
+
+.introduction img {
+  width: 30%;
+  border-radius: 50%;
+}
+
+.introduction p {
+  margin: 20px 0;
+  line-height: 2;
+}
+
+.introduction p a {
+  color: #1da1f2;
+  font-size: 14px;
+  margin-left: 5px;
+}
+
+.introduction p a:hover {
+  opacity: .7;
+}
+
+.balloon {
+  background: #fff;
+  width: 80%;
+  border-radius: 20px;
+  margin: 0 auto;
+  position: relative;
+  display: inline-block;
+  padding: 7px 10px;
+  min-width: 120px;
+  max-width: 100%;
+}
+
+.balloon::before {
+  content: "";
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  margin-left: -15px;
+  border: 15px solid transparent;
+  border-bottom: 15px solid #fff;
+}
+
+.skills {
+  text-align: center;
+  background: url(img/code-bg.png) center/cover;
+  position: relative;
+  color: #fff;
+}
+
+.skills h2 {
+  padding: 30px 0;
+}
+
+.skill {
+  padding-bottom: 60px;
+  position: relative;
+}
+
+.skill h3 {
+  font-size: 24px;
+  font-weight: normal;
+}
+
+.skill img {
+  width: 30%;
+}
+
+.skill p {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.products {
+  text-align: center;
+  background: #efefef;
+}
+
+.products-text h2 {
+  font-weight: bold;
+  padding-top: 30px;
+}
+
+.products-text p {
+  margin-top: 50px;
+  font-size: 1.5rem;
+}
+
+.product {
+  padding-top: 100px;
+}
+
+.product:nth-last-of-type(1) {
+  padding-bottom: 70px;
+}
+
+.product img {
+  width: 80%;
+  -webkit-box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.4);
+          box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.4);
+  -webkit-box-shadow: 0 0 12px rgba(0, 0, 0, 0.4);
+          box-shadow: 0 0 12px rgba(0, 0, 0, 0.4);
+}
+
+.product .product-text {
+  width: 80%;
+  margin-left: 70px;
+  text-align: start;
+  margin-bottom: 30px;
+}
+
+.product .product-text h3 {
+  margin: 10px 0;
+  font-size: 16px;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.product .product-text p {
+  margin: 0px 0;
+}
+
+.product .product-text a {
+  color: #628162;
+}
+
+.product .product-text a:hover {
+  text-decoration: underline;
+}
+
+.product .product-text span {
+  color: #333;
+  font-weight: bold;
+}
+
+.product .product-text .model {
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+.product .product-learn {
+  text-align: start;
+  margin-left: 70px;
+}
+
+.product .product-learn h3 {
+  border-bottom: 1px dashed #628162;
+  display: inline-block;
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+.product .product-learn ul {
+  margin-left: 20px;
+}
+
+.product .product-learn ul li {
+  margin-bottom: 10px;
+}
+
+.contact {
+  text-align: center;
+  padding: 50px 0;
+  background: #e2e1e1;
+  letter-spacing: 1px;
+}
+
+.contact h2 {
+  color: #585252;
+  margin-bottom: 20px;
+}
+
+.contact p {
+  color: #585252;
+  margin-bottom: 20px;
+}
+
+.contact a {
+  color: #fff;
+  background: #1da1f2;
+  display: inline-block;
+  padding: 12px;
+  border-radius: 50%;
+}
+
+.contact a:hover {
+  opacity: .7;
+}
+
+.contact .fa {
+  font-size: 28px;
+}
+
+footer {
+  background: #222;
+  font-size: 10px;
+  text-align: center;
+  padding: 30px 0;
+  color: #888;
+}
+
+#page-top {
+  width: 50px;
+  height: 50px;
+  background: silver;
+  opacity: .7;
+  position: fixed;
+  bottom: 10px;
+  right: 3px;
+  border-radius: 50%;
+}
+
+#page-top:hover {
+  opacity: 1;
+}
+
+#page-top a {
+  color: #333;
+  display: inline-block;
+  font-size: 24px;
+  padding-left: 13px;
+  padding-top: 6px;
+}
+
+#page-top a:hover {
+  text-decoration: none;
+}
+/*# sourceMappingURL=styles.css.map */
