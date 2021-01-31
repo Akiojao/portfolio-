@@ -1,23 +1,25 @@
 $(function() {
 
+  // ハンバーガーメニュー
   $('.js-fa-bars').click(function() {
     $('#js-ul').slideToggle(500);
   });
   
 
+  // メッセージ出現
   var message =$('#js-message');
   message.css('opacity', '0');
 
   $(window).scroll(function() {
     if ($(this).scrollTop() >
     300) {
-      message.animate({'opacity': '1'}, 2000, 'swing');
+      message.animate({'opacity': '1'}, 1000, 'swing');
     } 
   });
 
 
-
-  var pagetop =$('#page-top');
+  // スクロールトップ
+  var pagetop =$('#page-top a');
   pagetop.hide();
 
   $(window).scroll(function() {
@@ -34,6 +36,7 @@ $(function() {
      scrollTop: 0 },500);
      return false;
   });
+  
 
 
   // #で始まるアンカーをクリックした場合に処理
@@ -51,4 +54,16 @@ $(function() {
     return false;
  });
 
+
+  
+  // hover-mask
+  var product = $('.product');
+
+  product.hover(function() {
+    $(this).children('.hover-mask').stop().fadeIn(500);
+  },
+    function() {
+      $(this).children('.hover-mask').stop().fadeOut(500);
+    });
+  
 });
