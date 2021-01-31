@@ -89,19 +89,21 @@
     line-height: 2;
     font-size: 22px;
   }
+  .product-parent {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
   .product img {
-    width: 300px;
+    height: 100%;
   }
-  
-  #page-top {
-    width: 70px;
-    height: 70px;
+  .product .hover-mask {
+    width: 70%;
+    height: 100%;
+    left: 30px;
   }
-
   #page-top a {
     font-size: 40px;
-    padding-left: 17px;
-    padding: 4px 0 0 17px;
+    padding: 0px 0 15px 8px;
   }
 }
-/*# sourceMappingURL=responsive.css.map */
