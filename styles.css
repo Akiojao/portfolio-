@@ -148,11 +148,13 @@ header ul li a:hover {
 .products {
   text-align: center;
   background: #efefef;
+  padding-bottom: 100px;
 }
 
 .products-text h2 {
-  font-weight: bold;
+  font-weight: 500;
   padding-top: 30px;
+  padding-bottom: 100px;
 }
 
 .products-text p {
@@ -161,75 +163,37 @@ header ul li a:hover {
 }
 
 .product {
-  padding-top: 100px;
-}
-
-.product:nth-last-of-type(1) {
-  padding-bottom: 70px;
+  width: 100%;
+  margin-bottom: 30px;
+  position: relative;
 }
 
 .product img {
-  width: 80%;
-/*   -webkit-box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.4);
-          box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.4); */
+  width: 70%;
+  margin: 0 auto;
   -webkit-box-shadow: 0 0 12px rgba(0, 0, 0, 0.4);
           box-shadow: 0 0 12px rgba(0, 0, 0, 0.4);
 }
 
-.product .product-text {
-  width: 80%;
-  margin-left: 70px;
+.hover-mask {
+  width: 70%;
+  height: 100%;
+  padding: 0;
+  position: absolute;
+  top: 0px;
+  left: 70px;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.4);
   text-align: start;
-  margin-bottom: 30px;
+  padding: 20px;
+  display: none;
+  cursor: pointer;
 }
 
-.product .product-text h3 {
-  margin: 10px 0;
-  font-size: 16px;
-  font-size: 1.5rem;
-  font-weight: bold;
-}
-
-.product .product-text p {
-  margin: 0px 0;
-}
-
-.product .product-text a {
-  color: #628162;
-}
-
-.product .product-text a:hover {
-  text-decoration: underline;
-}
-
-.product .product-text span {
-  color: #333;
-  font-weight: bold;
-}
-
-.product .product-text .model {
-  margin-top: 20px;
-  font-weight: bold;
-}
-
-.product .product-learn {
-  text-align: start;
-  margin-left: 70px;
-}
-
-.product .product-learn h3 {
-  border-bottom: 1px dashed #628162;
-  display: inline-block;
-  margin-bottom: 20px;
-  font-size: 16px;
-}
-
-.product .product-learn ul {
-  margin-left: 20px;
-}
-
-.product .product-learn ul li {
-  margin-bottom: 10px;
+.hover-mask .model {
+  -webkit-text-decoration: underline 3px solid #e9e7e7;
+          text-decoration: underline 3px solid #e9e7e7;
+  margin: 0;
 }
 
 .contact {
@@ -275,13 +239,10 @@ footer {
 
 #page-top {
   width: 50px;
-  height: 50px;
-  background: silver;
   opacity: .7;
   position: fixed;
   bottom: 10px;
   right: 3px;
-  border-radius: 50%;
 }
 
 #page-top:hover {
@@ -290,10 +251,8 @@ footer {
 
 #page-top a {
   color: #333;
-  display: inline-block;
-  font-size: 24px;
+  font-size: 34px;
   padding-left: 13px;
-  padding-top: 6px;
 }
 
 #page-top a:hover {
