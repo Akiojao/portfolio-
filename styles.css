@@ -187,6 +187,9 @@ header ul li a:hover {
   text-align: start;
   padding: 20px;
   display: none;
+}
+
+.hover-mask .caption {
   cursor: pointer;
 }
 
