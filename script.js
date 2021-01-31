@@ -16,6 +16,16 @@ $(function() {
       message.animate({'opacity': '1'}, 1000, 'swing');
     } 
   });
+  
+   // hover-mask
+  var product = $('.product');
+
+  product.hover(function() {
+    $(this).children('.hover-mask').stop().fadeIn(500);
+  },
+    function() {
+      $(this).children('.hover-mask').stop().fadeOut(500);
+    });
 
 
   // スクロールトップ
@@ -56,14 +66,14 @@ $(function() {
 
 
   
-  // hover-mask
-  var product = $('.product');
+//   // hover-mask
+//   var product = $('.product');
 
-  product.hover(function() {
-    $(this).children('.hover-mask').stop().fadeIn(500);
-  },
-    function() {
-      $(this).children('.hover-mask').stop().fadeOut(500);
-    });
+//   product.hover(function() {
+//     $(this).children('.hover-mask').stop().fadeIn(500);
+//   },
+//     function() {
+//       $(this).children('.hover-mask').stop().fadeOut(500);
+//     });
   
 });
