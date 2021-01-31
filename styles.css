@@ -196,6 +196,14 @@ header ul li a:hover {
   margin: 0;
 }
 
+.hover-mask a {
+  color: #fff;
+}
+
+.hover-mask a:hover {
+  text-decoration: none;
+}
+
 .contact {
   text-align: center;
   padding: 50px 0;
