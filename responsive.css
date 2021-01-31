@@ -81,11 +81,7 @@
   .product img {
     height: 100%;
   }
-  .product .hover-mask {
-    width: 70%;
-    height: 100%;
-    left: 30px;
-  }
+  
   #page-top a {
     font-size: 40px;
     padding: 0px 0 15px 8px;
